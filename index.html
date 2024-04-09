@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+    <style>
+
+        h2{
+            text-align: center;
+            text-decoration-line: underline;
+            margin-bottom: 40px;
+            margin-top: 40px;
+               }
+
+        div{
+            background-color: honeydew;
+            box-shadow: 2px 4px 8px rgb(0,0,0,0.9);
+            margin: 8px 0;
+            padding: 8px;
+            width: 50%;
+            border-radius: 25px;
+            }
+
+        input[type=text]{
+            width: 50%;
+            margin-top: 4px;
+            margin-bottom: 5px;
+            padding: 6px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        input[type=password]{
+            width: 50%;
+            margin-top: 4px;
+            margin-bottom: 5px;
+            padding: 6px;
+            margin-left: 10px;
+            border-radius: 15px;
+        }
+
+        input[type=email]{
+            width: 50%;
+            margin-top: 4px;
+            margin-bottom: 5px;
+            padding: 6px;
+            margin-left: 50px;
+            border-radius: 15px;
+        }
+
+        input[type=submit]{
+            width: 30%;
+            margin-top: 9px;
+            padding: 6px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        input[type=submit]:hover{
+            background-color: rgb(131, 248, 127);
+            border: 1px solid rgb(131, 248, 127);
+            color: black;
+        }
+         
+        input[type=radio]{
+            margin-top: 9px;
+            margin-bottom: 15px;
+        }
+
+        input[type=date]{
+            width: 50%;
+            margin-top: 4px;
+            margin-bottom: 15px;
+            padding: 6px;
+            margin-left: 60px;
+            border-radius: 15px;
+        }
+
+        input[type=file]{
+            width: 50%;
+            margin-top: 4px;
+            margin-bottom: 15px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fill The Below Form</h2>
+    <center>
+    <div>
+        <form action="/">
+            <label for="fname">Enter Your First Name:</label>
+                <input type="text" placeholder="Enter Your Name" /required><br>
+
+            <label for="lname">Enter Your Last Name:</label>
+                <input type="text" placeholder="Enter Your Name"><br>
+
+            <label for="password">Enter Your Password: </label>
+                <input type="password" name="pass" placeholder="Enter Your Password" /required><br>
+
+            <label for="email">Enter Email Id: </label>
+                <input type="email" placeholder="Enter Your Email" /required><br>
+
+            <label for="dob">Date Of Birth: </label>
+                <input type="date"><br>
+
+                <label for="upload">Upload Your Details:</label>
+                <input type="file"><br>
+
+                <label for="gender"><strong>Gender:</strong> </label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female<br>
+
+            
+                <input type="submit">
+
+            
+        </form>
+    </div>
+</center>
+</body>
+</html>
